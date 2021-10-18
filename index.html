@@ -5,7 +5,19 @@
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
-      <a-marker preset="hiro">
+      <a-marker type="pattern"
+      preset="custom"
+      url = "assets/marker.patt"
+      videohandler
+      smooth = "true"
+      smoothCount="10"
+      smoothTolerance="0.01"
+      smoothThreshole="5"
+      raycaster="objects: .clickable"
+      emitevents="true"
+      cursor="fuse: false; rayOrigin: mouse;"
+      id="markerA">
+
         <a-entity
           position="0 0 0"
           scale="1.0 1.0 1.0"
