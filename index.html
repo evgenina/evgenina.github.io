@@ -19,8 +19,7 @@
     gesture-detector
     id="scene"
     >
-      <a-entity position="0 2.25 -15" particle-system="preset: rain"></a-entity>
-      <a-entity lighting="distant"></a-entity>
+      <a-entity position="0 2.25 -15" particle-system="preset: rain" size="5" velocity="0 10 0"></a-entity>
       <a-marker type="pattern"
       preset="custom"
       url = "https://whispering-island-99528.herokuapp.com/https://raw.githubusercontent.com/evgenina/evgenina.github.io/main/assets/kanji.patt"
@@ -36,7 +35,7 @@
 
         <a-entity
           position="0 0 0"
-          scale="10.0 10.0 10.0"
+          scale="20.0 20.0 20.0"
           class="clickable"
           gesture-handler = "minScale: 0.1; maxScale:5.0"
           animation-mixer="loop:repeat"
