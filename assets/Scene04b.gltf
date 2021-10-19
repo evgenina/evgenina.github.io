@@ -11990,7 +11990,7 @@
   },
   "buffers": [
     {
-      "uri": "Scene04.bin",
+      "uri": "Scene04b.bin",
       "byteLength": 261048
     }
   ],
@@ -14587,7 +14587,7 @@
           1.0,
           0.9240566,
           0.8915094,
-          0.149019614
+          0.5803922
         ],
         "metallicFactor": 0.0,
         "roughnessFactor": 0.5
@@ -14797,7 +14797,7 @@
         0.0,
         -1.0
       ],
-      "name": "Scene04"
+      "name": "Scene04b"
     },
     {
       "children": [
@@ -16399,7 +16399,7 @@
       "nodes": [
         0
       ],
-      "name": "Scene04"
+      "name": "Scene04b"
     }
   ],
   "textures": [
