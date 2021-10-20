@@ -30,8 +30,7 @@
 
 
 
-      <a-marker-camera preset='kanji'></a-marker-camera>
-
+      <a-marker-camera preset='kanji'>
         <a-entity
           position="0 0 0"
           scale="20.0 20.0 20.0"
@@ -42,7 +41,10 @@
           shadow="receive:true"
           gltf-model="https://whispering-island-99528.herokuapp.com/https://raw.githubusercontent.com/evgenina/evgenina.github.io/main/assets/Scene04b.gltf"
         ></a-entity>
+        
+      </a-marker-camera>
 
+      <a-marker-camera preset='hiro'>
         <a-entity
         position="0 0 0"
         scale="20.0 20.0 20.0"
@@ -52,8 +54,8 @@
         shadow="cast:true"
         shadow="receive:true"
         gltf-model="https://whispering-island-99528.herokuapp.com/https://raw.githubusercontent.com/evgenina/evgenina.github.io/main/assets/Penguin_single.gltf"
-
       ></a-entity>
+    </a-marker-camera>
 
     </a-scene>
   </body>
