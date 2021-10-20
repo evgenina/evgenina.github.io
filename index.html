@@ -21,12 +21,13 @@
     id="scene"
     >
     
-       <!-- Light Settings -->
+
+      <!-- Light Settings -->
       <a-entity position="0 1.8 -15" particle-system="preset: rain" size="30" velocity="0 1 0" type="3" accelerationValue="0,-1,0"></a-entity>
       <a-entity light="type: directional; color: #EEE; castShadow: true; intensity: 1.3; shadowCameraNear: 0.03; shadowCameraFar:2000" position="-1 1.2 0.1"></a-entity>
       <a-entity light="type: ambient; color: #CCC; intensity: 0.75" ></a-entity>
 
-
+      <!-- handle marker 1 -->
       <a-marker preset='kanji'>
           <a-entity
             position="0 0 0"
@@ -42,7 +43,7 @@
 
       </a-marker>
 
-      <!-- handle matrix marker -->
+      <!-- handle marker 2 -->
       <a-marker  type='barcode' value='5'>
         
         <a-entity
