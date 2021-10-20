@@ -20,6 +20,9 @@
     gesture-detector
     id="scene"
     >
+    
+    <a-entity id="rig" position="0 0 0">
+    <a-entity id="camera" camera look-controls></a-entity>
 
     </a-entity>
        <!-- Light Settings -->
@@ -27,7 +30,7 @@
       <a-entity light="type: directional; color: #EEE; castShadow: true; intensity: 1.3; shadowCameraNear: 0.03; shadowCameraFar:1000" position="-1 1.2 0.1"></a-entity>
       <a-entity light="type: ambient; color: #CCC; intensity: 0.75" ></a-entity>
 
-      <a-marker preset='kanji'>
+      <a-marker-camera preset='kanji'>
           <a-entity
             position="0 0 0"
             scale="20.0 20.0 20.0"
@@ -50,7 +53,7 @@
           gltf-model="https://whispering-island-99528.herokuapp.com/https://raw.githubusercontent.com/evgenina/evgenina.github.io/main/assets/Penguin_single.gltf"
         ></a-entity>
 
-      </a-marker>
+      </a-marker-camera>
 
 
     </a-scene>
