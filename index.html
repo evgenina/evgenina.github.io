@@ -19,11 +19,11 @@
     vr-mode-ui="enabled: false"
     gesture-detector
     id="scene"
-    background="color: red"
     > -->
 
     <a-scene 
     shadow="type: pcfsoft"
+    stats
     embedded
     arjs=" detectionMode: mono_and_matrix; matrixCodeType: 3x3; trackingMethod: best; sourceType: webcam; debugUIEnabled: false;
     sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;"
@@ -38,7 +38,7 @@
       <!-- <a-entity position="0 2.25 -15" particle-system="preset: dust" size="100" particleCount="8000" ></a-entity> -->
       <a-entity light="type: directional; color: #EEE; castShadow: true; intensity: 1.7; shadowCameraNear: 5 ; shadowCameraFar:500  ;shadowCameraVisible: true " position="-1 1.2 0.1"></a-entity>
       <a-entity light="type: ambient; color: #CCC; intensity: 0.8" ></a-entity>
-<a-scene background="color: red"></a-scene>
+
       <!-- handle marker 1 -->
       <a-marker preset='kanji'>
           <a-box position='0 0.5 0' material='opacity: 0.8;' scale = "2 2 2"></a-box>
