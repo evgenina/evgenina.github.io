@@ -9,7 +9,7 @@
   <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
   <body style="margin : 0px; overflow: hidden;">
     
-    <a-scene 
+    <!-- <a-scene 
     shadow="type: pcfsoft"
     stats
     embedded
@@ -19,19 +19,31 @@
     vr-mode-ui="enabled: false"
     gesture-detector
     id="scene"
+    background="color: red"
+    > -->
+
+    <a-scene 
+    shadow="type: pcfsoft"
+    embedded
+    arjs=" detectionMode: mono_and_matrix; matrixCodeType: 3x3; trackingMethod: best; sourceType: webcam; debugUIEnabled: false;
+    sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;"
+    renderer="logarithmicDepthBuffer: true;"
+    vr-mode-ui="enabled: false"
+    id="scene"
+    background="color: red"
     >
-    
 
       <!-- Light Settings -->
       <!-- <a-entity position="0 1.8 -15" particle-system="preset: rain" size="30" velocity="0 1 0" type="3" accelerationValue="0,-1,0"></a-entity> -->
       <!-- <a-entity position="0 2.25 -15" particle-system="preset: dust" size="100" particleCount="8000" ></a-entity> -->
       <a-entity light="type: directional; color: #EEE; castShadow: true; intensity: 1.7; shadowCameraNear: 5 ; shadowCameraFar:500  ;shadowCameraVisible: true " position="-1 1.2 0.1"></a-entity>
       <a-entity light="type: ambient; color: #CCC; intensity: 0.8" ></a-entity>
-
+<a-scene background="color: red"></a-scene>
       <!-- handle marker 1 -->
       <a-marker preset='kanji'>
           <a-box position='0 0.5 0' material='opacity: 0.8;' scale = "2 2 2"></a-box>
-          <a-entity text="font: mozillavr; value: Happy Birthday." negate="false" scale="4 4 4" position="0 0.5 0" color="blue"> </a-entity>
+          
+          <a-entity text="font: mozillavr; value: Happy Birthday." negate="false" scale="4 4 4" position="0 0.5 0" color="blue" font=""> </a-entity>
           <!-- <a-entity
             position="0 0 0"
             scale="0.1 0.1 0.1"
